@@ -8,8 +8,8 @@ document.addEventListener("DOMContentLoaded",() =>{
         const Email = form.elements["email"].value;
         const Mensagem = form.elements["mensagem"].value;
 
-        const result = 'name: ${Name} \n email: ${Email} \n mensagem: ${Mensagem}';
+        const result = `name:${Name} \n email: ${Email} \n mensagem: ${Mensagem}`;
 
         alert(result);
     });
-})
+});
