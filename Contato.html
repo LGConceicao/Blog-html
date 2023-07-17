@@ -2,21 +2,23 @@
 <html lang="pt-br">
     <head>
         <meta charset="UTF-8">
+        <link rel="stylesheet" href="style2.css">
+        <script src="ScriptsCont.js"></script>
         <title>Contato</title>
     </head>
     <body>
        <h1>Fórmulario para contato</h1>
-       <form>
-            <label for="name">Name:</label><br>
-            <input type="text" id="name" name="name"><br>
+       <form id="Con">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" placeholder="Nome" required><br>
 
-            <label for="email">Email:</label><br>
-            <input type="text" id="email" name="email"><br>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" placeholder="email@email.com" required><br>
 
-            <label for="mensagem">Mensagem:</label><br>
-            <input type="text" id="mensagem" name="mensagem"><br>
+            <label for="mensagem">Mensagem:</label>
+            <textarea type="text" id="mensagem" name="mensagem" required></textarea><br>
 
-            <input type="button" onclick="alert('Dados enviados')" value="Enviar">
+            <button>Enviar!</button>
        </form>
     </body>
 </html>
